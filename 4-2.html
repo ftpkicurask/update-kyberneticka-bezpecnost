@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podkapitola 4.2: Autentifikácia a autorizácia</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">Bezpečnosť informačných systémov</a></div>
+        <div class="nav"></div>
+            <a href="kapitoly.html">Kapitoly</a>
+            <a href="op.html">Odporúčané programy</a>
+            <a href="test.html">Testovanie Vedomostí</a>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="column">
+                <h1>Podkapitola 4.2: Autentifikácia a autorizácia</h1>
+                <p>Autentifikácia a autorizácia sú dva základné kroky v zabezpečovaní prístupu k informačným systémom.
+                <br><strong>Autentifikácia</strong> je proces overovania identity používateľa. Najbežnejšie používané metódy sú heslá, biometrické údaje (ako odtlačky prstov alebo rozpoznávanie tváre) a viacfaktorová autentifikácia (kombinácia viacerých metód overovania).
+                <br><strong>Autorizácia</strong> určuje, aké práva má používateľ po úspešnej autentifikácii. Určuje, ktoré časti systému môžu byť prístupné konkrétnemu používateľovi. Napríklad, zamestnanec môže mať prístup iba k určitej časti databázy, zatiaľ čo manažér môže mať prístup ku všetkým údajom.
+                <br>Príkladom je systém, kde zamestnanec firmy zadá svoje heslo a kód zaslaný na mobilný telefón (viacfaktorová autentifikácia), aby získal prístup k firemným dokumentom. Po prihlásení môže pristupovať iba k dokumentom, ktoré sú relevantné pre jeho prácu.  
+                </p>
+                <button onclick="redirectToPage()">Späť</button>
+
+                <script>
+                    function redirectToPage() {
+                        window.location.href = "4-1.html";
+                    }
+                </script>
+
+                <button onclick="redirectToPage2()">Ďalej</button>
+
+                <script>
+                    function redirectToPage2() {
+                        window.location.href = "4-3.html";
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Tvorca: Filip Kičura</p>
+    </footer>
+</body>
+</html>

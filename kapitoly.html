@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitoly</title>
+    <link rel="stylesheet" href="kapitoly.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var chapters = document.querySelectorAll('.chapter-list > li > a');
+            chapters.forEach(function(chapter) {
+                chapter.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var sublist = this.nextElementSibling;
+                    if (sublist && sublist.tagName === 'UL') {
+                        sublist.classList.toggle('visible');
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        .chapter-list ul {
+            display: none;
+        }
+
+        .chapter-list ul.visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">Bezpečnosť informačných systémov</a></div>
+        <div class="nav"></div>
+        <a href="kapitoly.html">Kapitoly</a>
+        <a href="op.html">Odporúčané programy</a>
+        <a href="test.html">Testovanie Vedomostí</a>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="column">
+                <h1>Kapitoly:</h1>
+                <ul class="chapter-list">
+                    <li><a href="1.html">Kapitola 1</a>
+                        <ul>
+                            <li><a href="1.html">1: Úvod</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="2.html">Kapitola 2</a>
+                        <ul>
+                            <li><a href="2.html">2: Čo znamená chrániť informačné systémy</a></li>
+                            <li><a href="2-1.html">2.1: Dôvernosť, integrita a dostupnosť (CIA triáda)</a></li>
+                            <li><a href="2-2.html">2.2: Základné pojmy</a></li>
+                            <li><a href="2-3.html">2.3: Spôsoby ochrany</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="3.html">Kapitola 3</a>
+                        <ul>
+                            <li><a href="3.html">3: Aké riziká a hrozby ohrozujú informačné systémy</a></li>
+                            <li><a href="3-1.html">3.1: Vnútorné a vonkajšie hrozby</a></li>
+                            <li><a href="3-2.html">3.2: Ľudský faktor</a></li>
+                            <li><a href="3-3.html">3.3: Klasifikácia hrozieb</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="4.html">Kapitola 4</a>
+                        <ul>
+                            <li><a href="4.html">4: Ako sa chránia informačné systémy</a></li>
+                            <li><a href="4-1.html">4.1: Fyzická bezpečnosť</a></li>
+                            <li><a href="4-2.html">4.2: Autentifikácia a autorizácia</a></li>
+                            <li><a href="4-3.html">4.3: Šifrovanie</a></li>
+                            <li><a href="4-4.html">4.4: Antivírusová ochrana</a></li>
+                            <li><a href="4-5.html">4.5: Zálohovanie dát</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="5.html">Kapitola 5</a>
+                        <ul>
+                            <li><a href="5.html">5: Bežné bezpečnostné problémy a ako im predchádzať</a></li>
+                            <li><a href="5-1.html">5.1: Vírusy a malware</a></li>
+                            <li><a href="5-2.html">5.2: Phishing a sociálne inžinierstvo</a></li>
+                            <li><a href="5-3.html">5.3: Útoky na dostupnosť (DoS útoky)</a></li>
+                            <li><a href="5-4.html">5.4: Ochrana pred neznámymi hrozbami</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="6.html">Kapitola 6</a>
+                        <ul>
+                            <li><a href="6.html">6: Základy bezpečnostnej politiky</a></li>
+                            <li><a href="6-1.html">6.1: Čo je bezpečnostná politika</a></li>
+                            <li><a href="6-2.html">6.2: Normy a pravidlá</a></li>
+                            <li><a href="6-3.html">6.3: Vzdelávanie zamestnancov a používateľov</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="7.html">Kapitola 7</a>
+                        <ul>
+                            <li><a href="7.html">7: Záver</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="8.html">Kapitola 8</a>
+                        <ul>
+                            <li><a href="8.html">8: Zoznam použitej literatúry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Tvorca: Filip Kičura</p>
+    </footer>
+</body>
+</html>
